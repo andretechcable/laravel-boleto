@@ -77,7 +77,7 @@ class Hsbc  extends AbstractBoleto implements BoletoContract
      */
     public function setEspecieDoc($especieDoc)
     {
-        $this->especieDoc = 'PD';
+        $this->especieDoc = $especieDoc;
         return $this;
     }
     /**

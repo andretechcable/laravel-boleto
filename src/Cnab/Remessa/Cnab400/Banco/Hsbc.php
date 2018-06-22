@@ -122,7 +122,7 @@ class Hsbc extends AbstractRemessa implements RemessaContract
         $this->add(27, 27, 0);
         $this->add(28, 31, Util::formatCnab('9', $this->getAgencia(), 4));
         $this->add(32, 33, 55);
-        $this->add(34, 37, Util::formatCnab('9', $this->getConta(), 4));
+        $this->add(34, 37, Util::formatCnab('9', $this->getAgencia(), 4));
         $this->add(38, 43, Util::formatCnab('9', $this->getConta(), 6));
         $this->add(44, 44, Util::formatCnab('9', $this->getContaDv(), 1));
         $this->add(45, 46, '');
